@@ -2,32 +2,116 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  margin-bottom: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input{
+  width: 50%;
+  height: 25px;;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.input::placeholder{
+  color: grey;
+}
+
+.btn{
+  width:10%;
+  height: 35px;
+  background-color: seagreen;
+  font-size: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cartContainer{
+  
+  width: 61%;
+  margin: 0 auto;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart{
+  border: 1px solid lightgray;
+  color: #548455;
+  background-color: #d9f6d6;
+  width:100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 20px; 
+  position: relative;
+}
+
+.cart div{
+  display: inline-block;
+}
+
+.name{
+  position: absolute;
+  left: 30px;
+}
+
+.qty{
+  position: absolute;
+  left: 220px;
+}
+
+.price{
+  position: absolute;
+  left: 270px;
+}
+
+.btn-dec, .btn-inc{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  font-size: 25px;
+  font-weight: 700;
+  color: #548455;
+  top:5px;
+}
+
+.btn-dec{
+  right: 250px;
+}
+
+.btn-inc{
+  right: 200px;
+}
+
+.btn-delete{
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  font-weight: 900;
+}
+
+.total{
+  background-color: steelblue;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  height: 35px;
+  position: relative;
+}
+
+.ttl_1{
+  position: absolute;
+  left: 50px;
+  top: 25%;
+}
+
+.ttl_2{
+  position: absolute;
+  right: 50px;
+  top: 25%;
 }
